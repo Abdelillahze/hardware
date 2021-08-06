@@ -155,7 +155,7 @@ section {
 section .image {
   position: relative;
   width: 100%;
-  height: calc(100vh - 57px);
+  max-height: calc(100vh - 57px);
   overflow: hidden;
 }
 
@@ -184,7 +184,7 @@ section .image img {
 
 @media (max-width: 767px) {
   section .slider {
-    width: 90%;
+    width: 100%;
   }
   section .image img {
     width: 350%;
