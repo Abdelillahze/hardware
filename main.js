@@ -7,19 +7,10 @@ let seconds = 8000;
 let i = 0;
 let b = 0;
 
-var v = window.matchMedia("(max-width: 767px)");
-
 function func() {
-  if (v.matches == true) {
-    i += 300;
-    if (i == 900) {
-      i = 0;
-    }
-  } else {
-    i += 100;
-    if (i == 300) {
-      i = 0;
-    }
+  i += 100;
+  if (i == 300) {
+    i = 0;
   }
   sld.style.transform = null;
   sld.style.transform += `translateX(-${i}%)`;
