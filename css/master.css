@@ -75,6 +75,7 @@ ul {
 
 header {
   padding: 15px;
+  user-select: none;
   background-color: var(--color-section);
 }
 
@@ -249,6 +250,7 @@ section .itijah img:last-child {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  user-select: none;
 }
 
 .product .container .row ul {
@@ -458,7 +460,6 @@ section .itijah img:last-child {
   }
 
   .about .container h1 {
-    
     margin-top: 40px;
   }
 }
