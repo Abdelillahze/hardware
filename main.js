@@ -182,3 +182,28 @@ drk.onclick = function () {
     current == "light" ? "dark" : "light"
   );
 };
+
+let ico = document.getElementById("icon");
+let ul = document.getElementById("ul");
+let la = document.getElementById("la");
+let ull = document.getElementById("ull");
+var media = window.matchMedia("(max-width: 700px)");
+ico.onclick = function () {
+  if (getComputedStyle(ul).display == "none") {
+    ul.style.display = "flex";
+    ull.style.display = "none";
+  } else {
+    ul.style.display = "none";
+  }
+};
+
+la.onclick = function () {
+  if (getComputedStyle(ull).display == "none") {
+    ull.style.display = "flex";
+    if (media.matches == true) {
+      ul.style.display = "none";
+    }
+  } else {
+    ull.style.display = "none";
+  }
+};
